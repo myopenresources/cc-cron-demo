@@ -1,7 +1,7 @@
-##安装
+## 瀹夎
 npm install cc-cron --save
 
-##使用
+## 浣跨敤
 import { CronModule } from 'cc-cron';
 
 @NgModule({
