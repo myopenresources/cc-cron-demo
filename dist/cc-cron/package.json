@@ -1,0 +1,22 @@
+{
+  "name": "cc-cron",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "ng-zorro-antd": "^8.5.2"
+  },
+  "main": "bundles/cc-cron.umd.js",
+  "module": "fesm5/cc-cron.js",
+  "es2015": "fesm2015/cc-cron.js",
+  "esm5": "esm5/cc-cron.js",
+  "esm2015": "esm2015/cc-cron.js",
+  "fesm5": "fesm5/cc-cron.js",
+  "fesm2015": "fesm2015/cc-cron.js",
+  "typings": "cc-cron.d.ts",
+  "metadata": "cc-cron.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

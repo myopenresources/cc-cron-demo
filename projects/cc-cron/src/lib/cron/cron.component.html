@@ -1,0 +1,32 @@
+<nz-card class="app-cron-container" [ngStyle]="style">
+    <nz-tabset>
+        <nz-tab nzTitle="秒" *ngIf="showSecond">
+            <cc-cron-second [(ngModel)]="second" [inputSize]="inputSize" [disabled]="disabled"
+                (ngModelChange)="change($event)"></cc-cron-second>
+        </nz-tab>
+        <nz-tab nzTitle="分" *ngIf="showMinute">
+            <cc-cron-minute [(ngModel)]="minute" [inputSize]="inputSize" [disabled]="disabled"
+                (ngModelChange)="change($event)"></cc-cron-minute>
+        </nz-tab>
+        <nz-tab nzTitle="时" *ngIf="showHour">
+            <cc-cron-hour [(ngModel)]="hour" [inputSize]="inputSize" [disabled]="disabled"
+                (ngModelChange)="change($event)"></cc-cron-hour>
+        </nz-tab>
+        <nz-tab nzTitle="日" *ngIf="showDay">
+            <cc-cron-day [(ngModel)]="day" [inputSize]="inputSize" [week]="week" (ngModelChange)="change($event)"
+                [disabled]="disabled"></cc-cron-day>
+        </nz-tab>
+        <nz-tab nzTitle="月" *ngIf="showMonth">
+            <cc-cron-month [(ngModel)]="month" [inputSize]="inputSize" (ngModelChange)="change($event)"
+                [disabled]="disabled"></cc-cron-month>
+        </nz-tab>
+        <nz-tab nzTitle="周" *ngIf="showWeek">
+            <cc-cron-week [(ngModel)]="week" [inputSize]="inputSize" [day]="day" (ngModelChange)="change($event)"
+                [disabled]="disabled"></cc-cron-week>
+        </nz-tab>
+        <nz-tab nzTitle="年" *ngIf="useYear && showYear">
+            <cc-cron-year [(ngModel)]="year" [minYear]="minYear" [maxYear]="maxYear" [inputSize]="inputSize"
+                (ngModelChange)="change($event)" [disabled]="disabled"></cc-cron-year>
+        </nz-tab>
+    </nz-tabset>
+</nz-card>
